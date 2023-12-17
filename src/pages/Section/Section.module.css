@@ -1,0 +1,68 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: 900;
+}
+
+.section img {
+  filter: blur(10px) grayscale(20%);
+}
+
+.section button {
+  position: absolute;
+  top: 60%;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 5px 20px;
+}
+
+.section button a {
+  font-weight: 400;
+}
+
+.section button:hover {
+  background-color: #c3c3c377;
+}
+
+.turin img {
+  width: 100%;
+}
+
+.rome img {
+  width: 100%;
+}
+
+.budapest img {
+  width: 100%;
+}
+
+.bucharest img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    max-height: 400px;
+  }
+
+  .section button {
+    font-size: 22px;
+  }
+
+  .section h2 {
+    font-size: 30px;
+  }
+}
