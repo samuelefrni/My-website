@@ -24,15 +24,6 @@ This project is all about the creation of my personal website, showcasing my pas
 1. Run the app with `npm start`.
 2. Access the app at [localhost:3000](http://localhost:3000).
 
-## Contributing
-
-We welcome contributions! Follow these steps:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes.
-4. Submit a pull request.
-
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
