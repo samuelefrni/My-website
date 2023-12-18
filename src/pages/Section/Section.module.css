@@ -38,19 +38,19 @@
 }
 
 .turin img {
-  width: 100%;
+  width: 120%;
 }
 
 .rome img {
-  width: 100%;
+  width: 120%;
 }
 
 .budapest img {
-  width: 100%;
+  width: 150%;
 }
 
 .bucharest img {
-  width: 100%;
+  width: 150%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -64,5 +64,21 @@
 
   .section h2 {
     font-size: 30px;
+  }
+
+  .turin img {
+    width: 100%;
+  }
+
+  .rome img {
+    width: 100%;
+  }
+
+  .budapest img {
+    width: 100%;
+  }
+
+  .bucharest img {
+    width: 100%;
   }
 }
