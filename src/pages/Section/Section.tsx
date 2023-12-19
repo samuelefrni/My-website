@@ -1,12 +1,16 @@
 import React from "react";
 import SectionCSS from "./Section.module.css";
 import { Link } from "react-router-dom";
+import coverMilazzo from "../../assets/IMG_3208.jpg";
+import coverPanarea from "../../assets/IMG_4859.jpg";
+import coverLipari from "../../assets/IMG_0348.jpg";
 import coverTurin from "../../assets/IMG_2841.jpg";
 import coverRome from "../../assets/IMG_4711.jpg";
 import coverBudapest from "../../assets/IMG_9876.jpg";
 import coverBucharest from "../../assets/IMG_3884.jpg";
 import { useParams, useLocation } from "react-router-dom";
 import { dataIMG } from "../../assets/data";
+import { Helmet } from "react-helmet";
 
 const Section: React.FC = (): JSX.Element | undefined => {
   const { pathname } = useLocation();
@@ -15,6 +19,49 @@ const Section: React.FC = (): JSX.Element | undefined => {
   if (pathname === "/")
     return (
       <React.StrictMode>
+        <Helmet>
+          <title>Samuele Furnari | Shoot</title>
+          <meta
+            name="description"
+            content="My personal WebSite, created by samuelefrni."
+          />
+        </Helmet>
+        <section className={`${SectionCSS.section} ${SectionCSS.milazzo}`}>
+          <h2>Milazzo</h2>
+          <img src={coverMilazzo} alt="Milazzo" />
+          <button>
+            <Link
+              to="section/milazzo"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              View
+            </Link>
+          </button>
+        </section>
+        <section className={`${SectionCSS.section} ${SectionCSS.panarea}`}>
+          <h2>Panarea</h2>
+          <img src={coverPanarea} alt="Panarea" />
+          <button>
+            <Link
+              to="section/panarea"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              View
+            </Link>
+          </button>
+        </section>
+        <section className={`${SectionCSS.section} ${SectionCSS.lipari}`}>
+          <h2>Lipari</h2>
+          <img src={coverLipari} alt="Lipari" />
+          <button>
+            <Link
+              to="section/lipari"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              View
+            </Link>
+          </button>
+        </section>
         <section className={`${SectionCSS.section} ${SectionCSS.turin}`}>
           <h2>Turin</h2>
           <img src={coverTurin} alt="Turin" />
@@ -66,9 +113,57 @@ const Section: React.FC = (): JSX.Element | undefined => {
       </React.StrictMode>
     );
 
+  if (sectionName == "milazzo")
+    return (
+      <React.StrictMode>
+        <Helmet>
+          <title>Milazzo | Shoot</title>
+          <meta name="description" content="Shoot about Milazzo" />
+        </Helmet>
+        <div>
+          <img src={coverMilazzo} alt="Milazzo" />
+          <img src={dataIMG.Milazzo[0]} alt="Milazzo" />
+        </div>
+      </React.StrictMode>
+    );
+
+  if (sectionName == "panarea")
+    return (
+      <React.StrictMode>
+        <Helmet>
+          <title>Panarea | Shoot</title>
+          <meta name="description" content="Shoot about Panarea" />
+        </Helmet>
+        <div>
+          <img src={coverPanarea} alt="Panarea" />
+          <img src={dataIMG.Panarea[0]} alt="Panarea" />
+          <img src={dataIMG.Panarea[1]} alt="Panarea" />
+        </div>
+      </React.StrictMode>
+    );
+
+  if (sectionName == "lipari")
+    return (
+      <React.StrictMode>
+        <Helmet>
+          <title>Lipari | Shoot</title>
+          <meta name="description" content="Shoot about Lipari" />
+        </Helmet>
+        <div>
+          <img src={coverLipari} alt="Lipari" />
+          <img src={dataIMG.Lipari[0]} alt="Lipari" />
+          <img src={dataIMG.Lipari[1]} alt="Lipari" />
+        </div>
+      </React.StrictMode>
+    );
+
   if (sectionName === "turin")
     return (
       <React.StrictMode>
+        <Helmet>
+          <title>Turin | Shoot</title>
+          <meta name="description" content="Shoot about Turin" />
+        </Helmet>
         <div>
           <img src={coverTurin} alt="Turin" />
           <img src={dataIMG.Turin[0]} alt="Turin" />
@@ -79,6 +174,10 @@ const Section: React.FC = (): JSX.Element | undefined => {
   if (sectionName === "rome")
     return (
       <React.StrictMode>
+        <Helmet>
+          <title>Rome | Shoot</title>
+          <meta name="description" content="Shoot about Rome" />
+        </Helmet>
         <div>
           <img src={coverRome} alt="Rome" />
           <img src={dataIMG.Rome[0]} alt="Rome" />
@@ -93,6 +192,10 @@ const Section: React.FC = (): JSX.Element | undefined => {
   if (sectionName === "budapest")
     return (
       <React.StrictMode>
+        <Helmet>
+          <title>Budapest | Shoot</title>
+          <meta name="description" content="Shoot about Budapest" />
+        </Helmet>
         <div>
           <img src={coverBudapest} alt="Budapest" />
           <img src={dataIMG.Budapest[0]} alt="Budapest" />
@@ -108,6 +211,10 @@ const Section: React.FC = (): JSX.Element | undefined => {
   if (sectionName === "bucharest")
     return (
       <React.StrictMode>
+        <Helmet>
+          <title>Bucharest | Shoot</title>
+          <meta name="description" content="Shoot about Bucharest" />
+        </Helmet>
         <div>
           <img src={coverBucharest} alt="Bucharest" />
           <img src={dataIMG.Bucharest[0]} alt="Bucharest" />

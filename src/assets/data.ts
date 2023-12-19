@@ -17,6 +17,11 @@ import ImageBucharest04 from "./IMG_3943.jpg";
 import ImageBucharest05 from "./IMG_3966.jpg";
 import ImageBucharest06 from "./IMG_3774.jpg";
 import ImageBucharest07 from "./592351a4-f1e5-4d7c-a724-2e8d00a4b960.jpg";
+import ImageLipari01 from "./IMG_0341.jpg";
+import ImageLipari02 from "./IMG_0365.jpg";
+import ImageMilazzo01 from "./IMG_3974.jpg";
+import ImagePanarea01 from "./IMG_4862.jpg";
+import ImagePanarea02 from "./IMG_4864.jpg";
 
 export const dataIMG = {
   Turin: [ImageTurin01],
@@ -38,4 +43,7 @@ export const dataIMG = {
     ImageBucharest06,
     ImageBucharest07,
   ],
+  Lipari: [ImageLipari01, ImageLipari02],
+  Milazzo: [ImageMilazzo01],
+  Panarea: [ImagePanarea01, ImagePanarea02],
 };

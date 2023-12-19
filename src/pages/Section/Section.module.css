@@ -38,11 +38,11 @@
 }
 
 .turin img {
-  width: 120%;
+  width: 110%;
 }
 
 .rome img {
-  width: 120%;
+  width: 110%;
 }
 
 .budapest img {
@@ -51,6 +51,18 @@
 
 .bucharest img {
   width: 150%;
+}
+
+.lipari img {
+  width: 110%;
+}
+
+.milazzo img {
+  width: 110%;
+}
+
+.panarea img {
+  width: 110%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -79,6 +91,18 @@
   }
 
   .bucharest img {
+    width: 100%;
+  }
+
+  .lipari img {
+    width: 100%;
+  }
+
+  .milazzo img {
+    width: 100%;
+  }
+
+  .panarea img {
     width: 100%;
   }
 }
