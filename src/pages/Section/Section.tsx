@@ -8,6 +8,7 @@ import coverTurin from "../../assets/IMG_2841.jpg";
 import coverRome from "../../assets/IMG_4711.jpg";
 import coverBudapest from "../../assets/IMG_9876.jpg";
 import coverBucharest from "../../assets/IMG_3884.jpg";
+import coverPrague from "../../assets/Praga/IMG_4737.jpg";
 import { useParams, useLocation } from "react-router-dom";
 import { dataIMG } from "../../assets/data";
 import { Helmet } from "react-helmet";
@@ -104,6 +105,18 @@ const Section: React.FC = (): JSX.Element | undefined => {
           <button>
             <Link
               to="section/bucharest"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              View
+            </Link>
+          </button>
+        </section>
+        <section className={`${SectionCSS.section} ${SectionCSS.prague}`}>
+          <h2>Prague</h2>
+          <img src={coverPrague} alt="Prague" />
+          <button>
+            <Link
+              to="section/prague"
               style={{ color: "white", textDecoration: "none" }}
             >
               View
@@ -224,6 +237,32 @@ const Section: React.FC = (): JSX.Element | undefined => {
           <img src={dataIMG.Bucharest[4]} alt="Bucharest" />
           <img src={dataIMG.Bucharest[5]} alt="Bucharest" />
           <img src={dataIMG.Bucharest[6]} alt="Bucharest" />
+        </div>
+      </React.StrictMode>
+    );
+
+  if (sectionName === "prague")
+    return (
+      <React.StrictMode>
+        <Helmet>
+          <title>Prague | Shoot</title>
+          <meta name="description" content="Shoot about Prague" />
+        </Helmet>
+        <div>
+          <img src={coverPrague} alt="Prague" />
+          <img src={dataIMG.Prague[0]} alt="Prague" />
+          <img src={dataIMG.Prague[1]} alt="Prague" />
+          <img src={dataIMG.Prague[2]} alt="Prague" />
+          <img src={dataIMG.Prague[3]} alt="Prague" />
+          <img src={dataIMG.Prague[4]} alt="Prague" />
+          <img src={dataIMG.Prague[5]} alt="Prague" />
+          <img src={dataIMG.Prague[6]} alt="Prague" />
+          <img src={dataIMG.Prague[7]} alt="Prague" />
+          <img src={dataIMG.Prague[8]} alt="Prague" />
+          <img src={dataIMG.Prague[9]} alt="Prague" />
+          <img src={dataIMG.Prague[10]} alt="Prague" />
+          <img src={dataIMG.Prague[11]} alt="Prague" />
+          <img src={dataIMG.Prague[12]} alt="Prague" />
         </div>
       </React.StrictMode>
     );

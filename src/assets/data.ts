@@ -22,6 +22,19 @@ import ImageLipari02 from "./IMG_0365.jpg";
 import ImageMilazzo01 from "./IMG_3974.jpg";
 import ImagePanarea01 from "./IMG_4862.jpg";
 import ImagePanarea02 from "./IMG_4864.jpg";
+import ImagePrague01 from "./Praga/c21c6c98-ab65-4cec-b73e-c9f74153e048.png";
+import ImagePrague02 from "./Praga/IMG_6575.jpg";
+import ImagePrague03 from "./Praga/IMG_6691.jpg";
+import ImagePrague04 from "./Praga/IMG_6716.jpg";
+import ImagePrague05 from "./Praga/IMG_6667.jpg";
+import ImagePrague06 from "./Praga/IMG_6562.jpg";
+import ImagePrague07 from "./Praga/IMG_6511.jpg";
+import ImagePrague08 from "./Praga/IMG_6633.jpg";
+import ImagePrague09 from "./Praga/IMG_6648.jpg";
+import ImagePrague10 from "./Praga/IMG_6686.jpg";
+import ImagePrague11 from "./Praga/IMG_6483.jpg";
+import ImagePrague12 from "./Praga/IMG_6729.jpg";
+import ImagePrague13 from "./Praga/IMG_6732.jpg";
 
 export const dataIMG = {
   Turin: [ImageTurin01],
@@ -46,4 +59,19 @@ export const dataIMG = {
   Lipari: [ImageLipari01, ImageLipari02],
   Milazzo: [ImageMilazzo01],
   Panarea: [ImagePanarea01, ImagePanarea02],
+  Prague: [
+    ImagePrague01,
+    ImagePrague02,
+    ImagePrague03,
+    ImagePrague04,
+    ImagePrague05,
+    ImagePrague06,
+    ImagePrague07,
+    ImagePrague08,
+    ImagePrague09,
+    ImagePrague10,
+    ImagePrague11,
+    ImagePrague12,
+    ImagePrague13,
+  ],
 };
