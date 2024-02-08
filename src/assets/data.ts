@@ -35,6 +35,12 @@ import ImagePrague10 from "./Praga/IMG_6686.jpg";
 import ImagePrague11 from "./Praga/IMG_6483.jpg";
 import ImagePrague12 from "./Praga/IMG_6729.jpg";
 import ImagePrague13 from "./Praga/IMG_6732.jpg";
+import ImageMilan01 from "./IMG_5388.jpg";
+import ImageMilan02 from "./IMG_5387.jpg";
+import ImageMilan03 from "./IMG_5393.jpg";
+import ImageMilan04 from "./IMG_5418.jpg";
+import ImageMilan05 from "./IMG_5402.jpg";
+import ImageMilan06 from "./IMG_5452.jpg";
 
 export const dataIMG = {
   Turin: [ImageTurin01],
@@ -73,5 +79,13 @@ export const dataIMG = {
     ImagePrague11,
     ImagePrague12,
     ImagePrague13,
+  ],
+  Milan: [
+    ImageMilan01,
+    ImageMilan02,
+    ImageMilan03,
+    ImageMilan04,
+    ImageMilan05,
+    ImageMilan06,
   ],
 };

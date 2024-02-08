@@ -69,6 +69,10 @@
   width: 110%;
 }
 
+.milan img {
+  width: 110%;
+}
+
 @media only screen and (min-width: 768px) {
   .section {
     max-height: 400px;
@@ -111,6 +115,10 @@
   }
 
   .prague img {
+    width: 100%;
+  }
+
+  .milan img {
     width: 100%;
   }
 }

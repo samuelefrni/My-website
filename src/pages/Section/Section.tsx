@@ -9,6 +9,7 @@ import coverRome from "../../assets/IMG_4711.jpg";
 import coverBudapest from "../../assets/IMG_9876.jpg";
 import coverBucharest from "../../assets/IMG_3884.jpg";
 import coverPrague from "../../assets/Praga/IMG_4737.jpg";
+import coverMilan from "../../assets/IMG_5373.jpg";
 import { useParams, useLocation } from "react-router-dom";
 import { dataIMG } from "../../assets/data";
 import { Helmet } from "react-helmet";
@@ -117,6 +118,18 @@ const Section: React.FC = (): JSX.Element | undefined => {
           <button>
             <Link
               to="section/prague"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              View
+            </Link>
+          </button>
+        </section>
+        <section className={`${SectionCSS.section} ${SectionCSS.milan}`}>
+          <h2>Milan</h2>
+          <img src={coverMilan} alt="Prague" />
+          <button>
+            <Link
+              to="section/milan"
               style={{ color: "white", textDecoration: "none" }}
             >
               View
@@ -263,6 +276,25 @@ const Section: React.FC = (): JSX.Element | undefined => {
           <img src={dataIMG.Prague[10]} alt="Prague" />
           <img src={dataIMG.Prague[11]} alt="Prague" />
           <img src={dataIMG.Prague[12]} alt="Prague" />
+        </div>
+      </React.StrictMode>
+    );
+  if (sectionName === "milan")
+    return (
+      <React.StrictMode>
+        <Helmet>
+          <title>Milan | Shoot</title>
+          <meta name="description" content="Shoot about my visit to Google" />
+        </Helmet>
+        <div>
+          <img src={coverMilan} alt="Milan" />
+          <img src={dataIMG.Milan[0]} alt="Milan" />
+          <img src={dataIMG.Milan[1]} alt="Milan" />
+          <img src={dataIMG.Milan[2]} alt="Milan" />
+          <img src={dataIMG.Milan[3]} alt="Milan" />
+          <img src={dataIMG.Milan[4]} alt="Milan" />
+          <img src={dataIMG.Milan[5]} alt="Milan" />
+          <img src={dataIMG.Milan[6]} alt="Milan" />
         </div>
       </React.StrictMode>
     );
