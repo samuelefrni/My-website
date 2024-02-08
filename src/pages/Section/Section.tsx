@@ -294,7 +294,6 @@ const Section: React.FC = (): JSX.Element | undefined => {
           <img src={dataIMG.Milan[3]} alt="Milan" />
           <img src={dataIMG.Milan[4]} alt="Milan" />
           <img src={dataIMG.Milan[5]} alt="Milan" />
-          <img src={dataIMG.Milan[6]} alt="Milan" />
         </div>
       </React.StrictMode>
     );
